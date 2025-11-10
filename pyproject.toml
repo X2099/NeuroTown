@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "neurotown"
+version = "0.1.0"
+description = "An AI-driven interactive simulation world built with LangChain."
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.120.3"
+uvicorn = "^0.38.0"
+langchain = "^1.0.3"
+langgraph = "^1.0.2"
+langchain_openai = "^1.0.1"
+langchain-community = "^0.4.1"
+streamlit = "^1.51.0"
+streamlit-autorefresh = "^1.0.1"
+requests = "^2.32.5"
+pypinyin = "^0.55.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.0.0"
+black = "^24.0.0"
+isort = "^5.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

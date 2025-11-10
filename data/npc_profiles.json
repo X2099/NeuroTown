@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Alice",
+    "role": "teacher",
+    "bio": "Loves gardening and teaching kids."
+  },
+  {
+    "name": "Bob",
+    "role": "merchant",
+    "bio": "Runs a spice stall at the market."
+  },
+  {
+    "name": "Eve",
+    "role": "artist",
+    "bio": "Paints city scenes, friendly and introspective."
+  }
+]

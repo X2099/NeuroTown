@@ -35,6 +35,6 @@ agent = create_agent(
 )
 
 result = agent.invoke({
-    "messages": [{"role": "user", "context": "解释一下机器学习！"}],
+    "messages": [{"role": "user", "content": "解释一下机器学习！"}],
     "context": {"user_role": "expert"}
 })

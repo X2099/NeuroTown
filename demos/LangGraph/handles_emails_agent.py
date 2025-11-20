@@ -4,8 +4,10 @@
 @Time    : 2025/11/13 16:47
 @Desc    : 
 """
+import io
 from typing import TypedDict, Literal
 
+from PIL.Image import Image
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.constants import END, START
 from langgraph.graph import StateGraph
@@ -179,7 +181,15 @@ workflow.add_edge("send_reply", END)  # 发送回复邮件 -> END
 memory = MemorySaver()
 app = workflow.compile(checkpointer=memory)
 
-if __name__ == '__main__':
+png_bytes = app.get_graph().draw_mermaid_png()
+
+# 保存到本地
+with open("graph.png", "wb") as f:
+    f.write(png_bytes)
+
+print("图片已保存到 graph.png")
+
+if __name__ == '__main__1':
     from pprint import pprint
 
     initial_state = {
